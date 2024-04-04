@@ -1,0 +1,1 @@
+﻿Console.WriteLine("Bu daqiqani soatga aylantiradigan dastur!");
