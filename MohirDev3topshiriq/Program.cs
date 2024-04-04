@@ -1,11 +1,23 @@
-﻿//1-misol minut=>soat
-Console.WriteLine("Bu daqiqani soatga aylantiradigan dastur!");
+﻿//2-misol yoshni toifalash
+Console.Write("Salom!\nIsmingizni kiriting =>  ");
+string name = Console.ReadLine();
 
-Console.Write("Daqiqani Kiriting: ");
-int time = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine($"{time} daqiqa => procressing... Soat");
+Console.Write($"{name} bu dastur yoshingizni toifalaydi\nYoshingizni Kirting => ");
+int age = Convert.ToInt32( Console.ReadLine() );
 
-int hours = time / 60;
-int min = hours * 60;
-int cal = time - min;
-Console.WriteLine($"soatga aylantirilganda: {hours} : {cal}");
+if (age >= 0 && age <= 12)
+{
+    Console.WriteLine($"{name} Sizning yoshingiz <bola> lar toifasiga to'g'ri keldi ");
+}
+else if (age >= 13 && age <= 19)
+{
+    Console.WriteLine($"{name} Sizning yoshingiz <o'smir> lar toifasiga to'g'ri keldi");
+}
+else if (age >= 20 && age <= 59)
+{
+    Console.WriteLine($"{name} Sizning yoshingiz <katta> lar toifasiga to'g'ri keldi");
+}
+else
+{
+    Console.WriteLine($"{name} Sizning yoshingiz <qariya> lar toifasiga to'g'ri keldi");
+}
